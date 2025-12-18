@@ -312,6 +312,37 @@ nav button{
 .faq .answer .p{
     font-size: 1.3rem;
 }
+.footer{
+    justify-self: center;
+    height: auto;
+    position: relative;
+    top: 90%;
+}
+.footer .paragraph{
+    margin: 5px;
+    align-items: center;
+}
+.footer .paragraph p{
+    padding-bottom: 10px;
+    font-size: larger;
+    text-align: center;
+}
+.paragraph form{
+    display: flex;
+    gap: 5px;
+}
+.paragraph button{
+    background-color: red;
+    color: white;
+    padding: 15px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.paragraph form input {
+    width: 700px;
+}
 
  @media (max-width: 650px) {
 
