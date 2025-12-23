@@ -119,7 +119,7 @@ nav button{
    
 }
 .main input::placeholder{
-    color:rgb(219, 215, 215);
+    color:rgb(140, 137, 137);
     opacity: 0.9;
 }
 
@@ -264,7 +264,7 @@ nav button{
     justify-self: center;
     height: auto;
     margin: 5px;
-    position: absolute;
+    /* position: static; */
 }
 .faq h2{
     margin: 10px;
@@ -306,7 +306,6 @@ nav button{
 
 .answer.show {
     display: block;
-    max-width: auto;
 }
 
 .faq .answer .p{
@@ -316,7 +315,8 @@ nav button{
     justify-self: center;
     height: auto;
     position: relative;
-    top: 90%;
+    width: 80%;
+    margin-top: 5%;
 }
 .footer .paragraph{
     margin: 5px;
@@ -330,7 +330,11 @@ nav button{
 .paragraph form{
     display: flex;
     gap: 5px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
 }
+
 .paragraph button{
     background-color: red;
     color: white;
@@ -341,8 +345,54 @@ nav button{
     cursor: pointer;
 }
 .paragraph form input {
-    width: 700px;
+    width: 60%;
+    justify-items: center;
+    align-items: center;
 }
+.footer-mid{
+    height: auto;
+    width: 80%;
+    
+}
+.footer .ques{
+    height: auto;
+    width: 80%;
+    text-align: left;
+    margin: 15px;
+    left: 20px;
+}
+.ques a{
+    color:rgb(191, 187, 187);
+    
+}
+.links{
+    height: auto;
+    width: 100%;
+    display: grid;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    grid-template-columns: 200px 220px 220px 200px;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+
+.links li a {
+    color:rgb(191, 187, 187);}
+#lang{
+    margin-top: 10%;
+    background-color: #070707;
+    height: 30px;
+    width: 120px;
+    text-align:center ;
+    font-size: larger;
+}
+.footer-mid p{
+        color:rgb(191, 187, 187);
+        margin:5% 10% 10% 0;
+}
+
+
 
  @media (max-width: 650px) {
 
@@ -422,6 +472,33 @@ nav button{
     .reasons{
         position: block;
     }
+    .footer{
+        height: auto;
+        margin: 15px;
+
+    }
+    .footer .paragraph p{
+        font-size: large;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .paragraph form{
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    /* .paragraph form input {
+        width: 400px;
+    } */
+     .paragraph form{
+        align-content:flex-start;
+        justify-content: flex-start;
+    }
+    .links{
+        grid-template-columns: 1fr;
+    }
+    
+
+
 }
 @media (min-width: 650px) and (max-width: 960px) {
     .slider{
@@ -459,6 +536,10 @@ nav button{
         width: 100%;
         height: 200px;
     }
+    .links{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
 
     @media (min-width: 961px) and (max-width: 1190px) {
@@ -502,7 +583,12 @@ nav button{
     .reasons{
         display: block;
     }
-    
+    .paragraph input{
+        width:300px ;
+    }
+    .links{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
 }
 
 

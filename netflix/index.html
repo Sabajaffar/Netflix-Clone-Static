@@ -159,13 +159,41 @@
         <div class="question"> <p class="p"> Is Netflix good for kids? </p> <span class="add">+</span></div>
         <div class="answer"> <p class="p"> The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space. <br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p> </div>
     </div>
+
     <div class="footer">
         <div class="paragraph">
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
             <form action="">
                 <input type="email" placeholder="Email address">
                 <button id="getstarted">Get Started &gt;</button>  
+
             </form>
+        </div>
+        <div class="footer-mid">
+            <br><br>
+            <div class="ques"><a href="#">Questions? Contact us.</a></div><br><br>
+            <div class="links">
+                
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href=""> Account</a></li>
+                    <li><a href="">Media Ceter</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Ways to Watch</a></li>
+                    <li><a href="">Terms Of Use</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                    <li><a href="">Corporate Information</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Speed Test</a></li>
+                    <li><a href="">Legal Notices</a></li>
+                    <li><a href="">Only on Netflix</a></li>
+            </div>
+            <select name="lang" id="lang">English
+                <option value="lang">English</option>
+            </select>
+            <p>Netflix Pakistan </p>
         </div>
     </div>
     
@@ -200,6 +228,7 @@
         }
     }
 
+const faq = document.querySelector(".faq")
 document.querySelectorAll(".question").forEach((question) => {
     question.addEventListener("click", () => {
         const answer = question.nextElementSibling;
@@ -213,11 +242,14 @@ document.querySelectorAll(".question").forEach((question) => {
         // If it was closed → open it
         if (!isOpen) {
             answer.classList.add("show");
+            faq.style.display = "static"
             icon.textContent = "×";
         }
         // If it was open → everything stays closed
     });
 });
+
+
 
 
 
